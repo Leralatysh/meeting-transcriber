@@ -1,5 +1,6 @@
 .env
 meetings/
+DEVELOPMENT.md
 *.pyc
 __pycache__/
 scripts/capture_audio
