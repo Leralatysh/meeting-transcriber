@@ -1,0 +1,6 @@
+.env
+meetings/
+*.pyc
+__pycache__/
+scripts/capture_audio
+.recording_pid
