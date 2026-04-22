@@ -12,7 +12,7 @@
 
 1. Запустить демон (один раз после перезагрузки):
    ```bash
-   python3 scripts/hotkey_daemon.py > /tmp/meeting-transcriber.log 2>&1 &
+   python3 /path/to/meeting-transcriber/scripts/hotkey_daemon.py &
    ```
 
 2. **Cmd+Shift+M** — начать запись (придёт уведомление)
@@ -20,6 +20,9 @@
 4. Файлы сохраняются в `meetings/YYYY-MM-DD/`: аудио, транскрипт и саммари
 
 Несколько встреч в один день — каждая в отдельном файле с временем.
+
+Проверить что демон работает: `launchctl list | grep meeting-transcriber`
+Остановить вручную: `launchctl unload ~/Library/LaunchAgents/com.meeting-transcriber.daemon.plist`
 
 ---
 
